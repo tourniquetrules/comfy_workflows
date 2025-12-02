@@ -72,7 +72,10 @@ The `Wan2.2_Animate` workflow already demonstrates the solution: it uses **Pose 
 
 ### Summary of Actionable Changes
 
-1.  **Download Script:** Use the provided `download_models.sh` to get all necessary assets.
+1.  **Download Script:**
+    *   **Linux/Mac:** Use `download_models.sh`.
+    *   **Windows:** Use `download_models.ps1` (Run in PowerShell).
+    *   These scripts will download all necessary checkpoints, VAEs, and LoRAs to the correct ComfyUI directories.
 2.  **Modify Workflow:**
     *   Load "Infinite Talk".
     *   Add `Load Video` node (for motion driver).
